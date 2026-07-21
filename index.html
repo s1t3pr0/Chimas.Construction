@@ -1,22 +1,25 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Chimas Construction | Concrete, Pavers & Hardscapes in North Carolina</title>
+<title>Chimas Construction | Concrete & Hardscaping in North Carolina</title>
 
-<meta name="description" content="Chimas Construction provides professional concrete driveways, patios, walkways, pool decks, pavers, and retaining walls throughout Charlotte, Raleigh, Greensboro, Winston-Salem, Durham, Wilmington, Huntersville, Waxhaw, and surrounding areas.">
+<meta name="description" content="Chimas Construction provides concrete driveways, patios, walkways, stamped concrete, pavers, pool surrounds, and retaining walls throughout Charlotte, Raleigh, Greensboro, Winston-Salem, Durham, Wilmington, Huntersville, Waxhaw, and surrounding areas.">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 
 <style>
 
-/* ================================
-   GLOBAL STYLES
-================================ */
+/* ==============================
+   GENERAL
+============================== */
 
 *{
 margin:0;
@@ -32,57 +35,32 @@ background:#fff;
 line-height:1.6;
 }
 
-img{
-max-width:100%;
-display:block;
-}
-
 .container{
 width:90%;
 max-width:1200px;
 margin:auto;
 }
 
-section{
-padding:80px 0;
-}
-
-h1,h2,h3{
-line-height:1.2;
-}
-
-.title{
-text-align:center;
-margin-bottom:50px;
-}
-
-.title h2{
-font-size:38px;
-margin-bottom:15px;
-}
-
-.title p{
-max-width:700px;
-margin:auto;
-color:#666;
+img{
+max-width:100%;
 }
 
 
-/* ================================
+/* ==============================
    HEADER
-================================ */
+============================== */
 
 header{
 background:#111;
 color:#fff;
+padding:15px 0;
 position:sticky;
 top:0;
 z-index:999;
-box-shadow:0 3px 10px rgba(0,0,0,0.2);
+box-shadow:0 2px 10px rgba(0,0,0,0.2);
 }
 
 nav{
-min-height:75px;
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -90,7 +68,7 @@ align-items:center;
 
 .logo{
 font-size:22px;
-font-weight:800;
+font-weight:700;
 letter-spacing:1px;
 }
 
@@ -98,14 +76,9 @@ letter-spacing:1px;
 color:#d4af37;
 }
 
-nav ul{
-display:flex;
-list-style:none;
-gap:25px;
-}
-
 nav a{
 color:#fff;
+margin-left:25px;
 text-decoration:none;
 font-size:14px;
 font-weight:500;
@@ -117,18 +90,17 @@ color:#d4af37;
 }
 
 
-/* ================================
+/* ==============================
    HERO
-================================ */
+============================== */
 
 .hero{
-
-min-height:85vh;
+min-height:90vh;
 
 background:
 linear-gradient(
-rgba(0,0,0,0.60),
-rgba(0,0,0,0.60)
+rgba(0,0,0,0.65),
+rgba(0,0,0,0.65)
 ),
 url('images/Hero.jpg');
 
@@ -139,6 +111,7 @@ display:flex;
 align-items:center;
 
 color:#fff;
+padding:40px 0;
 }
 
 .hero-content{
@@ -146,83 +119,79 @@ max-width:750px;
 }
 
 .hero h1{
-font-size:56px;
-font-weight:800;
+font-size:52px;
+line-height:1.2;
 margin-bottom:20px;
 }
 
 .hero p{
-font-size:20px;
-margin-bottom:30px;
+font-size:19px;
 max-width:650px;
-}
-
-.hero-buttons{
-display:flex;
-gap:15px;
-flex-wrap:wrap;
+margin-bottom:25px;
 }
 
 .btn{
-display:inline-block;
-padding:14px 25px;
 background:#d4af37;
 color:#111;
+padding:13px 25px;
+font-weight:600;
 text-decoration:none;
-font-weight:700;
+display:inline-block;
 border-radius:5px;
 transition:0.3s;
 }
 
 .btn:hover{
 background:#fff;
-}
-
-.btn-outline{
-display:inline-block;
-padding:13px 24px;
-border:2px solid #fff;
-color:#fff;
-text-decoration:none;
-font-weight:600;
-border-radius:5px;
-transition:0.3s;
-}
-
-.btn-outline:hover{
-background:#fff;
-color:#111;
+transform:translateY(-2px);
 }
 
 
-/* ================================
+/* ==============================
+   SECTIONS
+============================== */
+
+section{
+padding:80px 0;
+}
+
+.title{
+text-align:center;
+margin-bottom:50px;
+}
+
+.title h2{
+font-size:38px;
+margin-bottom:10px;
+}
+
+.title p{
+max-width:700px;
+margin:auto;
+color:#666;
+}
+
+
+/* ==============================
    SERVICE INTRO
-================================ */
+============================== */
 
-.intro{
+.service-intro{
 background:#f7f7f7;
 }
 
-.intro-content{
+.intro-text{
 max-width:850px;
 margin:auto;
 text-align:center;
-}
-
-.intro-content h2{
-font-size:36px;
-margin-bottom:20px;
-}
-
-.intro-content p{
-color:#555;
 font-size:17px;
+color:#555;
 }
 
 
-/* ================================
-   SERVICES
-================================ */
+/* ==============================
+   SERVICES GRID
+============================== */
 
 .services-grid{
 display:grid;
@@ -234,7 +203,7 @@ gap:25px;
 background:#fff;
 border-radius:10px;
 overflow:hidden;
-box-shadow:0 5px 20px rgba(0,0,0,0.10);
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
 transition:0.3s;
 }
 
@@ -245,8 +214,9 @@ box-shadow:0 10px 25px rgba(0,0,0,0.15);
 
 .service-card img{
 width:100%;
-height:230px;
+height:240px;
 object-fit:cover;
+display:block;
 }
 
 .service-content{
@@ -255,68 +225,76 @@ padding:25px;
 
 .service-content h3{
 font-size:22px;
-margin-bottom:10px;
+margin-bottom:8px;
 }
 
 .service-content p{
 color:#666;
 font-size:15px;
+margin-bottom:15px;
 }
 
 
-/* ================================
-   FEATURED PROJECT
-================================ */
+/* ==============================
+   STAMPED / NON-STAMPED LABEL
+============================== */
 
-.featured{
+.service-options{
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+margin-top:15px;
+}
+
+.service-option{
 background:#111;
 color:#fff;
+padding:6px 10px;
+border-radius:4px;
+font-size:12px;
+font-weight:500;
 }
 
-.featured-grid{
+.service-option.gold{
+background:#d4af37;
+color:#111;
+}
+
+
+/* ==============================
+   SERVICE DETAILS
+============================== */
+
+.details-section{
+background:#fff;
+}
+
+.details-grid{
 display:grid;
-grid-template-columns:1fr 1fr;
-gap:50px;
-align-items:center;
+grid-template-columns:repeat(2,1fr);
+gap:30px;
 }
 
-.featured-image img{
-width:100%;
-height:500px;
-object-fit:cover;
-border-radius:10px;
+.detail-box{
+background:#f7f7f7;
+padding:30px;
+border-left:4px solid #d4af37;
+border-radius:5px;
 }
 
-.featured-content h2{
-font-size:40px;
-margin-bottom:20px;
-}
-
-.featured-content p{
-color:#ccc;
-margin-bottom:25px;
-}
-
-.featured-list{
-list-style:none;
-margin-bottom:25px;
-}
-
-.featured-list li{
+.detail-box h3{
+font-size:23px;
 margin-bottom:10px;
 }
 
-.featured-list li::before{
-content:"✓";
-color:#d4af37;
-font-weight:bold;
-margin-right:10px;
+.detail-box p{
+color:#666;
 }
 
 
-/* ================================
+/* ==============================
    BEFORE & AFTER GALLERY
-================================ */
+============================== */
 
 .gallery-section{
 background:#f7f7f7;
@@ -330,170 +308,117 @@ gap:50px;
 
 .project-pair{
 display:grid;
-grid-template-columns:1fr 1fr;
+grid-template-columns:repeat(2,1fr);
 gap:25px;
 }
 
-.before-after-card{
+.before-after-image{
 background:#fff;
 border-radius:10px;
 overflow:hidden;
-box-shadow:0 5px 20px rgba(0,0,0,0.10);
+box-shadow:0 5px 20px rgba(0,0,0,0.12);
 }
 
-.before-after-label{
+.before-after-image h3{
+text-align:center;
+padding:12px;
+background:#111;
+color:#fff;
+font-size:17px;
+}
+
+.before-after-image img{
+width:100%;
+height:400px;
+object-fit:cover;
+display:block;
+}
+
+
+/* ==============================
+   SERVICE AREA
+============================== */
+
+.service-area{
 background:#111;
 color:#fff;
 text-align:center;
-padding:12px;
-font-weight:700;
 }
 
-.before-after-card img{
-width:100%;
-height:350px;
-object-fit:cover;
+.service-area .title h2{
+color:#fff;
 }
 
-
-/* ================================
-   SERVICE AREA
-================================ */
-
-.service-area{
-background:#fff;
+.service-area .title p{
+color:#ccc;
 }
 
-.area-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:15px;
-max-width:900px;
+.area-list{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+max-width:950px;
 margin:auto;
 }
 
 .area{
-background:#f7f7f7;
-padding:18px;
-text-align:center;
+border:1px solid #555;
+padding:10px 18px;
 border-radius:5px;
-font-weight:600;
+font-size:14px;
 }
 
-.area-note{
-text-align:center;
-margin-top:30px;
-color:#666;
-}
-
-
-/* ================================
-   WHY CHOOSE US
-================================ */
-
-.why-us{
-background:#f7f7f7;
-}
-
-.why-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:25px;
-}
-
-.why-card{
-background:#fff;
-padding:30px;
-text-align:center;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
-}
-
-.why-icon{
-font-size:40px;
-margin-bottom:15px;
-}
-
-.why-card h3{
-margin-bottom:10px;
-}
-
-.why-card p{
-color:#666;
+.area:hover{
+border-color:#d4af37;
+color:#d4af37;
 }
 
 
-/* ================================
+/* ==============================
    CTA
-================================ */
+============================== */
 
 .cta{
-background:
-linear-gradient(
-rgba(0,0,0,0.75),
-rgba(0,0,0,0.75)
-),
-url('images/CTA-Background.jpg');
-
-background-size:cover;
-background-position:center;
-
-color:#fff;
+background:#d4af37;
+color:#111;
 text-align:center;
+padding:70px 20px;
 }
 
 .cta h2{
-font-size:42px;
-margin-bottom:15px;
-}
-
-.cta p{
-font-size:18px;
-margin-bottom:25px;
+font-size:36px;
+margin-bottom:10px;
 }
 
 .phone{
 font-size:28px;
 font-weight:700;
-color:#d4af37;
-margin-bottom:25px;
+margin:10px 0 20px;
 }
 
+.cta .btn{
+background:#111;
+color:#fff;
+}
 
-/* ================================
-   CONTACT FORM
-================================ */
-
-.contact{
+.cta .btn:hover{
 background:#fff;
+color:#111;
 }
 
-.contact-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:50px;
-align-items:start;
-}
 
-.contact-info h2{
-font-size:36px;
-margin-bottom:20px;
-}
+/* ==============================
+   CONTACT FORM
+============================== */
 
-.contact-info p{
-color:#666;
-margin-bottom:20px;
-}
-
-.contact-details{
-margin-top:25px;
-}
-
-.contact-details p{
-margin-bottom:10px;
+.contact-section{
+background:#f7f7f7;
 }
 
 form{
+max-width:650px;
+margin:auto;
 display:flex;
 flex-direction:column;
 gap:12px;
@@ -502,11 +427,19 @@ gap:12px;
 input,
 textarea,
 select{
-padding:14px;
+
+padding:13px;
+
 border:1px solid #ccc;
+
 border-radius:5px;
+
 font-family:Poppins,sans-serif;
-font-size:15px;
+
+font-size:14px;
+
+background:#fff;
+
 }
 
 textarea{
@@ -514,14 +447,27 @@ resize:vertical;
 }
 
 button{
+
 background:#d4af37;
+
+color:#111;
+
 border:none;
+
 padding:14px;
-font-weight:700;
+
+font-weight:600;
+
 cursor:pointer;
+
 border-radius:5px;
-font-size:16px;
+
+font-family:Poppins,sans-serif;
+
+font-size:15px;
+
 transition:0.3s;
+
 }
 
 button:hover{
@@ -530,85 +476,63 @@ color:#fff;
 }
 
 
-/* ================================
+/* ==============================
    FOOTER
-================================ */
+============================== */
 
 footer{
 background:#111;
 color:#aaa;
-padding:40px 0 20px;
-}
-
-.footer-grid{
-display:grid;
-grid-template-columns:2fr 1fr 1fr;
-gap:40px;
-margin-bottom:30px;
-}
-
-.footer-column h3{
-color:#fff;
-margin-bottom:15px;
-}
-
-.footer-column p{
+text-align:center;
+padding:25px 20px;
 font-size:14px;
 }
 
-.footer-column ul{
-list-style:none;
-}
 
-.footer-column li{
-margin-bottom:8px;
-}
-
-.footer-column a{
-color:#aaa;
-text-decoration:none;
-}
-
-.footer-column a:hover{
-color:#d4af37;
-}
-
-.footer-bottom{
-border-top:1px solid #333;
-padding-top:20px;
-text-align:center;
-font-size:13px;
-}
-
-
-/* ================================
+/* ==============================
    FLOATING CALL BUTTON
-================================ */
+============================== */
 
 .call-btn{
+
 position:fixed;
+
 bottom:20px;
+
 right:20px;
+
 background:#25d366;
+
 color:#fff;
+
 padding:14px 20px;
+
 border-radius:50px;
+
 text-decoration:none;
-font-weight:700;
+
+font-weight:600;
+
 box-shadow:0 5px 15px rgba(0,0,0,0.3);
-z-index:999;
+
+z-index:1000;
+
 transition:0.3s;
+
 }
 
 .call-btn:hover{
+
 background:#20ba5e;
+
 transform:scale(1.05);
+
 }
 
 
-/* ================================
+/* ==============================
    MOBILE
-================================ */
+============================== */
 
 @media(max-width:900px){
 
@@ -616,59 +540,36 @@ transform:scale(1.05);
 grid-template-columns:repeat(2,1fr);
 }
 
-.why-grid{
-grid-template-columns:1fr;
-}
-
-.area-grid{
-grid-template-columns:repeat(2,1fr);
-}
-
-.featured-grid{
-grid-template-columns:1fr;
-}
-
-.contact-grid{
-grid-template-columns:1fr;
-}
-
-.footer-grid{
-grid-template-columns:1fr 1fr;
-}
-
 }
 
 @media(max-width:768px){
-
-section{
-padding:60px 0;
-}
-
-nav{
-flex-direction:column;
-padding:15px 0;
-gap:15px;
-}
-
-nav ul{
-gap:15px;
-flex-wrap:wrap;
-justify-content:center;
-}
 
 .hero{
 min-height:75vh;
 }
 
 .hero h1{
-font-size:38px;
+font-size:36px;
 }
 
 .hero p{
-font-size:17px;
+font-size:16px;
+}
+
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+nav a{
+margin:0 8px;
 }
 
 .services-grid{
+grid-template-columns:1fr;
+}
+
+.details-grid{
 grid-template-columns:1fr;
 }
 
@@ -676,28 +577,16 @@ grid-template-columns:1fr;
 grid-template-columns:1fr;
 }
 
-.before-after-card img{
-height:280px;
+.before-after-image img{
+height:300px;
 }
 
-.featured-image img{
-height:350px;
-}
-
-.featured-content h2{
-font-size:32px;
-}
-
-.area-grid{
-grid-template-columns:1fr;
-}
-
-.footer-grid{
-grid-template-columns:1fr;
+.title h2{
+font-size:30px;
 }
 
 .cta h2{
-font-size:32px;
+font-size:28px;
 }
 
 }
@@ -710,9 +599,9 @@ font-size:32px;
 <body>
 
 
-<!-- ================================
+<!-- ==============================
      HEADER
-================================ -->
+============================== -->
 
 <header>
 
@@ -724,25 +613,17 @@ font-size:32px;
 CHIMAS <span>CONSTRUCTION</span>
 </div>
 
-<ul>
+<div>
 
-<li>
 <a href="#services">Services</a>
-</li>
 
-<li>
-<a href="#projects">Projects</a>
-</li>
+<a href="#gallery">Projects</a>
 
-<li>
-<a href="#service-area">Service Areas</a>
-</li>
+<a href="#areas">Service Areas</a>
 
-<li>
 <a href="#contact">Contact</a>
-</li>
 
-</ul>
+</div>
 
 </nav>
 
@@ -751,9 +632,10 @@ CHIMAS <span>CONSTRUCTION</span>
 </header>
 
 
-<!-- ================================
+
+<!-- ==============================
      HERO
-================================ -->
+============================== -->
 
 <section class="hero">
 
@@ -762,25 +644,17 @@ CHIMAS <span>CONSTRUCTION</span>
 <div class="hero-content">
 
 <h1>
-Quality Concrete & Hardscaping Built to Last
+Concrete & Hardscaping Built to Last
 </h1>
 
 <p>
-Professional concrete and hardscape construction for homeowners throughout major metro areas across North Carolina.
+Professional concrete and hardscaping services for homeowners throughout Charlotte and major metro areas across North Carolina.
 </p>
-
-<div class="hero-buttons">
 
 <a href="#contact" class="btn">
 Request a Free Estimate
 </a>
 
-<a href="tel:9802935467" class="btn-outline">
-Call (980) 293-5467
-</a>
-
-</div>
-
 </div>
 
 </div>
@@ -788,34 +662,42 @@ Call (980) 293-5467
 </section>
 
 
-<!-- ================================
-     INTRO
-================================ -->
 
-<section class="intro">
+<!-- ==============================
+     INTRO
+============================== -->
+
+<section class="service-intro">
 
 <div class="container">
 
-<div class="intro-content">
+<div class="title">
 
 <h2>
-Built for Your Property. Designed for Your Lifestyle.
+Quality Concrete & Hardscaping
 </h2>
 
 <p>
-Chimas Construction provides professional concrete and hardscape services for residential properties throughout North Carolina. From durable driveways and walkways to beautiful patios, poolside concrete and paver installations, and retaining walls, we focus on quality workmanship and long-lasting results.
+Built for your home. Designed for your lifestyle.
 </p>
 
 </div>
 
+<p class="intro-text">
+
+Chimas Construction provides professional concrete and hardscaping services for residential properties throughout North Carolina. From driveways and patios to walkways, pavers, poolside areas, and retaining walls, we focus on quality workmanship, clean finishes, and long-lasting results.
+
+</p>
+
 </div>
 
 </section>
 
 
-<!-- ================================
+
+<!-- ==============================
      SERVICES
-================================ -->
+============================== -->
 
 <section id="services">
 
@@ -828,7 +710,7 @@ Our Services
 </h2>
 
 <p>
-Professional concrete and hardscape solutions designed to improve the beauty, function, and value of your property.
+Choose from traditional concrete, decorative stamped concrete, or paver installations depending on the look and function you want for your property.
 </p>
 
 </div>
@@ -850,12 +732,25 @@ Concrete Driveways
 </h3>
 
 <p>
-Durable concrete driveways designed for everyday use. Choose from traditional non-stamped concrete or decorative stamped concrete finishes.
+Durable concrete driveways designed for everyday use. Choose a clean, traditional non-stamped finish or decorative stamped concrete for added texture and visual character.
 </p>
 
+<div class="service-options">
+
+<span class="service-option">
+Non-Stamped Concrete
+</span>
+
+<span class="service-option gold">
+Stamped Concrete
+</span>
+
 </div>
 
 </div>
+
+</div>
+
 
 
 <!-- SERVICE 2 -->
@@ -871,12 +766,25 @@ Concrete Patios & Outdoor Living
 </h3>
 
 <p>
-Create a comfortable outdoor space with a custom concrete patio. We offer both stamped and non-stamped concrete options.
+Create a beautiful outdoor space for relaxing and entertaining. We install traditional non-stamped concrete patios as well as decorative stamped concrete designs.
 </p>
 
+<div class="service-options">
+
+<span class="service-option">
+Non-Stamped Concrete
+</span>
+
+<span class="service-option gold">
+Stamped Concrete
+</span>
+
 </div>
 
 </div>
+
+</div>
+
 
 
 <!-- SERVICE 3 -->
@@ -892,12 +800,25 @@ Concrete Walkways
 </h3>
 
 <p>
-Professional concrete walkways that provide a clean, safe, and attractive path around your home. Available in stamped and non-stamped finishes.
+Enhance the entrance and flow of your property with professionally installed concrete walkways. Choose a clean traditional finish or a decorative stamped design.
 </p>
 
+<div class="service-options">
+
+<span class="service-option">
+Non-Stamped Concrete
+</span>
+
+<span class="service-option gold">
+Stamped Concrete
+</span>
+
 </div>
 
 </div>
+
+</div>
+
 
 
 <!-- SERVICE 4 -->
@@ -913,19 +834,36 @@ Pool Surrounds & Poolside Hardscaping
 </h3>
 
 <p>
-Create a finished look around your in-ground pool with professionally installed stamped concrete, non-stamped concrete, or pavers. Poolside areas can be designed as a standalone project or connected to an existing patio or concrete area.
+Create a finished look around your in-ground pool with professionally installed stamped concrete, non-stamped concrete, or pavers. Poolside areas can be installed as a standalone project or connected to an existing patio or concrete area.
 </p>
 
+<div class="service-options">
+
+<span class="service-option">
+Non-Stamped Concrete
+</span>
+
+<span class="service-option gold">
+Stamped Concrete
+</span>
+
+<span class="service-option">
+Pavers
+</span>
+
 </div>
 
 </div>
+
+</div>
+
 
 
 <!-- SERVICE 5 -->
 
 <div class="service-card">
 
-<img src="images/Pavers.jpg" alt="Paver installation">
+<img src="images/Pavers.jpg" alt="Paver patio and hardscaping installation">
 
 <div class="service-content">
 
@@ -934,19 +872,36 @@ Paver Installation
 </h3>
 
 <p>
-Professional paver installation for patios, walkways, outdoor spaces, and other hardscape applications.
+Paver installations for patios, walkways, poolside areas, and other outdoor hardscape spaces. Create a durable and visually appealing surface with a variety of paver styles and patterns.
 </p>
 
+<div class="service-options">
+
+<span class="service-option gold">
+Paver Patios
+</span>
+
+<span class="service-option">
+Paver Walkways
+</span>
+
+<span class="service-option">
+Poolside Pavers
+</span>
+
 </div>
 
 </div>
+
+</div>
+
 
 
 <!-- SERVICE 6 -->
 
 <div class="service-card">
 
-<img src="images/Retaining-Wall.jpeg" alt="Retaining wall construction">
+<img src="images/Retaining-Wall.jpeg" alt="Retaining wall installation">
 
 <div class="service-content">
 
@@ -955,8 +910,16 @@ Retaining Walls
 </h3>
 
 <p>
-Strong and functional retaining wall solutions designed to improve the structure, appearance, and usability of your property.
+Strong and reliable retaining wall installations designed to improve the function, structure, and appearance of your outdoor space.
 </p>
+
+<div class="service-options">
+
+<span class="service-option gold">
+Retaining Walls
+</span>
+
+</div>
 
 </div>
 
@@ -970,52 +933,82 @@ Strong and functional retaining wall solutions designed to improve the structure
 </section>
 
 
-<!-- ================================
-     FEATURED PROJECT
-================================ -->
 
-<section class="featured">
+<!-- ==============================
+     SERVICE DETAILS
+============================== -->
+
+<section class="details-section">
 
 <div class="container">
 
-<div class="featured-grid">
-
-<div class="featured-image">
-
-<img src="images/Featured-Project.jpg" alt="Chimas Construction completed project">
-
-</div>
-
-
-<div class="featured-content">
+<div class="title">
 
 <h2>
-From Preparation to Completion
+Choose the Finish That Fits Your Property
 </h2>
 
 <p>
-Every project begins with careful preparation and attention to detail. Our goal is to provide quality workmanship that looks great and is built to last.
+Not sure which option is right for your project? We can help you determine which finish best fits your property, style, and goals.
 </p>
 
-<ul class="featured-list">
+</div>
 
-<li>Professional project preparation</li>
 
-<li>Quality concrete and hardscape work</li>
+<div class="details-grid">
 
-<li>Stamped and non-stamped concrete options</li>
 
-<li>Residential projects of various sizes</li>
+<div class="detail-box">
 
-<li>Service throughout major North Carolina metro areas</li>
+<h3>
+Traditional Non-Stamped Concrete
+</h3>
 
-</ul>
-
-<a href="#contact" class="btn">
-Start Your Project
-</a>
+<p>
+A clean and classic concrete finish that works well for driveways, patios, walkways, and poolside areas. A practical option for homeowners who prefer a simple and timeless appearance.
+</p>
 
 </div>
+
+
+<div class="detail-box">
+
+<h3>
+Decorative Stamped Concrete
+</h3>
+
+<p>
+Add texture and visual character to your concrete project with decorative stamped patterns. Stamped concrete can create the appearance of natural stone, slate, brick, or other decorative surfaces.
+</p>
+
+</div>
+
+
+<div class="detail-box">
+
+<h3>
+Paver Installation
+</h3>
+
+<p>
+Pavers provide a versatile hardscape option for patios, walkways, poolside areas, and other outdoor spaces. Different patterns, textures, and styles can help create a customized look.
+</p>
+
+</div>
+
+
+<div class="detail-box">
+
+<h3>
+Poolside Concrete & Pavers
+</h3>
+
+<p>
+For in-ground pool projects, we install concrete or pavers around the pool area. The installation can be connected to an existing patio or concrete surface, or completed as a separate poolside hardscape project.
+</p>
+
+</div>
+
 
 </div>
 
@@ -1024,11 +1017,12 @@ Start Your Project
 </section>
 
 
-<!-- ================================
-     BEFORE & AFTER PROJECTS
-================================ -->
 
-<section id="projects" class="gallery-section">
+<!-- ==============================
+     BEFORE & AFTER GALLERY
+============================== -->
+
+<section id="gallery" class="gallery-section">
 
 <div class="container">
 
@@ -1052,22 +1046,22 @@ See the transformation created by Chimas Construction.
 
 <div class="project-pair">
 
-<div class="before-after-card">
+<div class="before-after-image">
 
-<div class="before-after-label">
-BEFORE
-</div>
+<h3>
+Before
+</h3>
 
 <img src="images/Gallery1.jpg" alt="Chimas Construction project before">
 
 </div>
 
 
-<div class="before-after-card">
+<div class="before-after-image">
 
-<div class="before-after-label">
-AFTER
-</div>
+<h3>
+After
+</h3>
 
 <img src="images/Gallery2.jpg" alt="Chimas Construction project after">
 
@@ -1076,28 +1070,29 @@ AFTER
 </div>
 
 
+
 <!-- PROJECT 2 -->
 
 <div class="project-pair">
 
-<div class="before-after-card">
+<div class="before-after-image">
 
-<div class="before-after-label">
-BEFORE
+<h3>
+Before
+</h3>
+
+<img src="images/Gallery5.jpg" alt="Chimas Construction project before">
+
 </div>
 
-<img src="images/Gallery5.jpg" alt="Chimas Construction second project before">
 
-</div>
+<div class="before-after-image">
 
+<h3>
+After
+</h3>
 
-<div class="before-after-card">
-
-<div class="before-after-label">
-AFTER
-</div>
-
-<img src="images/Gallery6.jpg" alt="Chimas Construction second project after">
+<img src="images/Gallery6.jpg" alt="Chimas Construction project after">
 
 </div>
 
@@ -1111,28 +1106,29 @@ AFTER
 </section>
 
 
-<!-- ================================
-     SERVICE AREAS
-================================ -->
 
-<section id="service-area" class="service-area">
+<!-- ==============================
+     SERVICE AREAS
+============================== -->
+
+<section id="areas" class="service-area">
 
 <div class="container">
 
 <div class="title">
 
 <h2>
-Areas We Serve
+Serving Major Metro Areas Across North Carolina
 </h2>
 
 <p>
-Chimas Construction proudly serves homeowners throughout major metro areas across North Carolina.
+Chimas Construction proudly serves homeowners throughout Charlotte and surrounding communities, as well as major metro areas across North Carolina.
 </p>
 
 </div>
 
 
-<div class="area-grid">
+<div class="area-list">
 
 <div class="area">
 Charlotte
@@ -1172,117 +1168,31 @@ Surrounding Areas
 
 </div>
 
-
-<p class="area-note">
-Don't see your city listed? Contact us to find out if we service your area.
-</p>
-
 </div>
 
 </section>
 
 
-<!-- ================================
-     WHY CHOOSE US
-================================ -->
 
-<section class="why-us">
-
-<div class="container">
-
-<div class="title">
-
-<h2>
-Why Choose Chimas Construction?
-</h2>
-
-<p>
-We believe your property deserves quality work and attention to detail.
-</p>
-
-</div>
-
-
-<div class="why-grid">
-
-
-<div class="why-card">
-
-<div class="why-icon">
-🏗️
-</div>
-
-<h3>
-Quality Workmanship
-</h3>
-
-<p>
-We focus on doing the job right and creating results built to last.
-</p>
-
-</div>
-
-
-<div class="why-card">
-
-<div class="why-icon">
-📐
-</div>
-
-<h3>
-Custom Solutions
-</h3>
-
-<p>
-Every property and project is different. We work to create solutions that fit your needs.
-</p>
-
-</div>
-
-
-<div class="why-card">
-
-<div class="why-icon">
-📍
-</div>
-
-<h3>
-Local Service
-</h3>
-
-<p>
-We serve homeowners throughout major metro areas and surrounding communities across North Carolina.
-</p>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ================================
-     CTA
-================================ -->
+<!-- ==============================
+     CALL TO ACTION
+============================== -->
 
 <section class="cta">
 
 <div class="container">
 
 <h2>
-Ready to Transform Your Property?
+Ready to Start Your Project?
 </h2>
 
 <p>
-Contact Chimas Construction today to discuss your project.
+Contact Chimas Construction today to discuss your concrete or hardscaping project.
 </p>
 
-<div class="phone">
+<p class="phone">
 (980) 293-5467
-</div>
+</p>
 
 <a href="#contact" class="btn">
 Request a Free Estimate
@@ -1293,50 +1203,30 @@ Request a Free Estimate
 </section>
 
 
-<!-- ================================
-     CONTACT
-================================ -->
 
-<section id="contact" class="contact">
+<!-- ==============================
+     CONTACT FORM
+============================== -->
+
+<section id="contact" class="contact-section">
 
 <div class="container">
 
-<div class="contact-grid">
-
-
-<div class="contact-info">
+<div class="title">
 
 <h2>
-Let's Talk About Your Project
+Request a Free Estimate
 </h2>
 
 <p>
-Tell us about your project and we'll get in touch to discuss your needs and provide information about your free estimate.
+Tell us a little about your project and we will get in touch with you.
 </p>
-
-<div class="contact-details">
-
-<p>
-<strong>Phone:</strong>
-(980) 293-5467
-</p>
-
-<p>
-<strong>Service Area:</strong>
-Major Metro Areas Across North Carolina
-</p>
-
-<p>
-<strong>Email:</strong>
-frecendiz@gmail.com
-</p>
-
-</div>
 
 </div>
 
 
 <form action="mailto:frecendiz@gmail.com" method="POST" enctype="text/plain">
+
 
 <input
 type="text"
@@ -1345,6 +1235,7 @@ placeholder="Your Name"
 required
 >
 
+
 <input
 type="tel"
 name="phone"
@@ -1352,11 +1243,13 @@ placeholder="Phone Number"
 required
 >
 
+
 <input
 type="email"
 name="email"
 placeholder="Email Address"
 >
+
 
 <select name="service">
 
@@ -1381,7 +1274,7 @@ Pool Surround / Poolside Hardscaping
 </option>
 
 <option>
-Pavers
+Paver Installation
 </option>
 
 <option>
@@ -1394,121 +1287,48 @@ Other
 
 </select>
 
+
 <textarea
 name="message"
 rows="6"
 placeholder="Tell us about your project"
 ></textarea>
 
+
 <button type="submit">
-Request Free Estimate
+Send Request
 </button>
 
+
 </form>
-
-
-</div>
 
 </div>
 
 </section>
 
 
-<!-- ================================
+
+<!-- ==============================
      FOOTER
-================================ -->
+============================== -->
 
 <footer>
 
-<div class="container">
-
-<div class="footer-grid">
-
-
-<div class="footer-column">
-
-<h3>
-CHIMAS CONSTRUCTION
-</h3>
-
 <p>
-Professional concrete and hardscape construction serving homeowners throughout major metro areas across North Carolina.
-</p>
-
-</div>
-
-
-<div class="footer-column">
-
-<h3>
-Quick Links
-</h3>
-
-<ul>
-
-<li>
-<a href="#services">
-Services
-</a>
-</li>
-
-<li>
-<a href="#projects">
-Projects
-</a>
-</li>
-
-<li>
-<a href="#service-area">
-Service Areas
-</a>
-</li>
-
-<li>
-<a href="#contact">
-Contact
-</a>
-</li>
-
-</ul>
-
-</div>
-
-
-<div class="footer-column">
-
-<h3>
-Contact
-</h3>
-
-<p>
-(980) 293-5467
+© 2026 Chimas Construction | Concrete & Hardscaping | North Carolina
 </p>
 
 <p>
-frecendiz@gmail.com
+Charlotte • Raleigh • Greensboro • Winston-Salem • Durham • Wilmington • Surrounding Areas
 </p>
-
-</div>
-
-
-</div>
-
-
-<div class="footer-bottom">
-
-<p>
-© 2026 Chimas Construction | Charlotte, NC
-</p>
-
-</div>
-
-</div>
 
 </footer>
 
 
-<!-- FLOATING CALL BUTTON -->
+
+<!-- ==============================
+     FLOATING CALL BUTTON
+============================== -->
 
 <a
 class="call-btn"
@@ -1521,3 +1341,4 @@ href="tel:9802935467"
 </body>
 
 </html>
+```
