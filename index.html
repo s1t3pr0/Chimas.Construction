@@ -1,20 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Chimas Construction | Concrete & Hardscaping in North Carolina</title>
+<title>Chimas Construction | Concrete Driveways, Patios & Pavers in Charlotte NC</title>
 
-<meta name="description" content="Chimas Construction provides concrete driveways, stamped and non-stamped concrete, patios, walkways, pavers, and pool concrete services throughout Charlotte, Raleigh, Greensboro, Winston-Salem, Durham, Wilmington, Huntersville, Waxhaw, and surrounding areas.">
+<meta name="description" content="Chimas Construction provides concrete driveways, stamped and non-stamped concrete patios and walkways, pavers, and concrete around in-ground pools in Charlotte, Raleigh, Greensboro, Winston-Salem, Huntersville, Waxhaw, Durham, Wilmington and surrounding areas. Request a free estimate.">
 
+<meta name="keywords" content="concrete contractor Charlotte NC, concrete driveways Charlotte NC, stamped concrete Charlotte NC, concrete patios Charlotte NC, concrete walkways Charlotte NC, pavers Charlotte NC, pool concrete Charlotte NC, concrete contractor Raleigh NC, concrete contractor Greensboro NC, concrete contractor Huntersville NC, concrete contractor Waxhaw NC">
+
+<meta name="author" content="Chimas Construction">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://chimasconstruction.biz/">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:title" content="Chimas Construction | Concrete & Hardscaping in North Carolina">
+
+<meta property="og:description" content="Concrete driveways, patios, walkways, stamped and non-stamped concrete, pavers, and concrete around in-ground pools. Serving major metro areas across North Carolina.">
+
+<meta property="og:type" content="website">
+
+<meta property="og:url" content="https://chimasconstruction.biz/">
+
+<meta property="og:image" content="https://chimasconstruction.biz/images/Hero.jpg">
+
+
+<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+<!-- LOCAL BUSINESS STRUCTURED DATA -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Chimas Construction",
+  "url": "https://chimasconstruction.biz/",
+  "telephone": "+1-980-293-5467",
+  "description": "Chimas Construction provides concrete driveways, stamped and non-stamped concrete patios and walkways, pavers, and concrete installation around in-ground pools.",
+  "areaServed": [
+    "Charlotte, NC",
+    "Huntersville, NC",
+    "Waxhaw, NC",
+    "Raleigh, NC",
+    "Durham, NC",
+    "Greensboro, NC",
+    "Winston-Salem, NC",
+    "Wilmington, NC"
+  ],
+  "serviceType": [
+    "Concrete Driveways",
+    "Concrete Patios",
+    "Concrete Walkways",
+    "Stamped Concrete",
+    "Non-Stamped Concrete",
+    "Paver Installation",
+    "Concrete Around In-Ground Pools"
+  ]
+}
+</script>
+
 
 <style>
 
-/* ============================= */
-/* GENERAL SETTINGS */
-/* ============================= */
+/* =========================================
+   GLOBAL STYLES
+========================================= */
 
 *{
 margin:0;
@@ -30,51 +87,36 @@ background:#fff;
 line-height:1.6;
 }
 
+img{
+max-width:100%;
+}
+
 .container{
 width:90%;
 max-width:1200px;
 margin:auto;
 }
 
-section{
-padding:80px 0;
-}
 
-.title{
-text-align:center;
-margin-bottom:50px;
-}
-
-.title h2{
-font-size:38px;
-margin-bottom:10px;
-}
-
-.title p{
-max-width:700px;
-margin:auto;
-color:#666;
-}
-
-/* ============================= */
-/* HEADER */
-/* ============================= */
+/* =========================================
+   HEADER
+========================================= */
 
 header{
 background:#111;
 color:#fff;
-padding:15px 0;
+padding:18px 0;
 position:sticky;
 top:0;
 z-index:999;
-box-shadow:0 2px 10px rgba(0,0,0,0.3);
+box-shadow:0 2px 10px rgba(0,0,0,0.25);
 }
 
 nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
-gap:20px;
+gap:30px;
 }
 
 .logo{
@@ -87,20 +129,17 @@ white-space:nowrap;
 color:#d4af37;
 }
 
-.nav-right{
+.nav-links{
 display:flex;
 align-items:center;
-gap:25px;
+gap:28px;
 }
 
 nav a{
 color:#fff;
-margin-left:35px;
 text-decoration:none;
 font-size:15px;
 font-weight:500;
-padding:10px 5px;
-display:inline-block;
 transition:0.3s;
 }
 
@@ -108,46 +147,46 @@ nav a:hover{
 color:#d4af37;
 }
 
-/* LANGUAGE SWITCHER */
 
-.language-switcher{
-display:flex;
-align-items:center;
-gap:8px;
-font-size:13px;
-}
+/* SPANISH TOGGLE */
 
-.language-switcher button{
-background:transparent;
-border:none;
-color:#fff;
-cursor:pointer;
-font-weight:600;
-font-size:13px;
-padding:4px;
-}
-
-.language-switcher button:hover{
+.language-toggle{
+border:1px solid #d4af37;
+padding:7px 12px;
+border-radius:5px;
 color:#d4af37;
+cursor:pointer;
+font-size:13px;
+font-weight:600;
+background:transparent;
 }
 
-.language-divider{
-color:#777;
+.language-toggle:hover{
+background:#d4af37;
+color:#111;
 }
 
-/* ============================= */
-/* HERO */
-/* ============================= */
+
+/* =========================================
+   HERO
+========================================= */
 
 .hero{
-min-height:90vh;
+min-height:88vh;
+
 background:
-linear-gradient(rgba(0,0,0,0.68),rgba(0,0,0,0.68)),
+linear-gradient(
+rgba(0,0,0,0.65),
+rgba(0,0,0,0.65)
+),
 url('images/Hero.jpg');
+
 background-size:cover;
 background-position:center;
+
 display:flex;
 align-items:center;
+
 color:#fff;
 padding:40px 0;
 }
@@ -165,31 +204,20 @@ margin-bottom:20px;
 .hero p{
 font-size:19px;
 max-width:650px;
-margin-bottom:15px;
+margin-bottom:30px;
 }
 
-.hero-service-area{
-font-size:15px;
-margin-bottom:25px;
-color:#eee;
-}
-
-.spanish-banner{
-display:inline-block;
-background:#d4af37;
-color:#111;
-padding:8px 15px;
-border-radius:5px;
-font-weight:700;
-font-size:14px;
-margin-bottom:25px;
+.hero-buttons{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
 }
 
 .btn{
 background:#d4af37;
 color:#111;
-padding:13px 25px;
-font-weight:700;
+padding:13px 24px;
+font-weight:600;
 text-decoration:none;
 display:inline-block;
 border-radius:5px;
@@ -202,12 +230,75 @@ background:#fff;
 transform:translateY(-2px);
 }
 
-/* ============================= */
-/* SERVICES */
-/* ============================= */
+.btn-outline{
+background:transparent;
+color:#fff;
+border:2px solid #fff;
+}
+
+.btn-outline:hover{
+background:#fff;
+color:#111;
+}
+
+
+/* =========================================
+   GENERAL SECTIONS
+========================================= */
+
+section{
+padding:80px 0;
+}
+
+.title{
+text-align:center;
+margin-bottom:50px;
+}
+
+.title h2{
+font-size:38px;
+line-height:1.2;
+margin-bottom:12px;
+}
+
+.title p{
+max-width:700px;
+margin:auto;
+color:#666;
+}
+
+
+/* =========================================
+   INTRODUCTION
+========================================= */
+
+.intro{
+background:#fff;
+}
+
+.intro-content{
+max-width:850px;
+margin:auto;
+text-align:center;
+}
+
+.intro-content h2{
+font-size:34px;
+margin-bottom:20px;
+}
+
+.intro-content p{
+color:#555;
+font-size:17px;
+}
+
+
+/* =========================================
+   SERVICES
+========================================= */
 
 .services-section{
-background:#fff;
+background:#f7f7f7;
 }
 
 .service-grid{
@@ -218,9 +309,9 @@ gap:25px;
 
 .service-card{
 background:#fff;
-border-radius:12px;
+border-radius:10px;
 overflow:hidden;
-box-shadow:0 5px 20px rgba(0,0,0,0.1);
+box-shadow:0 5px 18px rgba(0,0,0,0.1);
 transition:0.3s;
 }
 
@@ -231,7 +322,7 @@ box-shadow:0 10px 25px rgba(0,0,0,0.15);
 
 .service-card img{
 width:100%;
-height:230px;
+height:240px;
 object-fit:cover;
 display:block;
 }
@@ -241,7 +332,7 @@ padding:22px;
 }
 
 .service-content h3{
-font-size:21px;
+font-size:22px;
 margin-bottom:10px;
 }
 
@@ -250,59 +341,55 @@ color:#666;
 font-size:15px;
 }
 
-/* ============================= */
-/* STAMPED / NON-STAMPED */
-/* ============================= */
 
-.style-section{
-background:#f7f7f7;
+/* =========================================
+   STAMPED VS NON-STAMPED
+========================================= */
+
+.concrete-options{
+background:#fff;
 }
 
-.style-grid{
+.options-grid{
 display:grid;
 grid-template-columns:repeat(2,1fr);
 gap:30px;
 }
 
-.style-card{
+.option-card{
 background:#fff;
-border-radius:12px;
+border-radius:10px;
 overflow:hidden;
-box-shadow:0 5px 20px rgba(0,0,0,0.1);
+box-shadow:0 5px 18px rgba(0,0,0,0.12);
 }
 
-.style-card img{
+.option-card img{
 width:100%;
-height:320px;
+height:350px;
 object-fit:cover;
 display:block;
 }
 
-.style-content{
+.option-content{
 padding:25px;
-text-align:center;
 }
 
-.style-content h3{
-font-size:24px;
+.option-content h3{
+font-size:25px;
 margin-bottom:10px;
 }
 
-.style-content p{
+.option-content p{
 color:#666;
 }
 
-/* ============================= */
-/* POOL CONCRETE & PAVERS */
-/* ============================= */
+
+/* =========================================
+   POOL CONCRETE & PAVERS
+========================================= */
 
 .pool-section{
-background:#111;
-color:#fff;
-}
-
-.pool-section .title p{
-color:#ccc;
+background:#f7f7f7;
 }
 
 .pool-grid{
@@ -312,38 +399,39 @@ gap:30px;
 }
 
 .pool-card{
-background:#1c1c1c;
-border-radius:12px;
+background:#fff;
+border-radius:10px;
 overflow:hidden;
+box-shadow:0 5px 18px rgba(0,0,0,0.1);
 }
 
 .pool-card img{
 width:100%;
-height:320px;
+height:350px;
 object-fit:cover;
 display:block;
 }
 
-.pool-content{
+.pool-card-content{
 padding:25px;
 }
 
-.pool-content h3{
-color:#d4af37;
+.pool-card-content h3{
+font-size:24px;
 margin-bottom:10px;
-font-size:23px;
 }
 
-.pool-content p{
-color:#ddd;
+.pool-card-content p{
+color:#666;
 }
 
-/* ============================= */
-/* BEFORE & AFTER GALLERY */
-/* ============================= */
+
+/* =========================================
+   BEFORE & AFTER GALLERY
+========================================= */
 
 .gallery-section{
-background:#f7f7f7;
+background:#fff;
 }
 
 .before-after{
@@ -362,7 +450,7 @@ gap:25px;
 background:#fff;
 border-radius:12px;
 overflow:hidden;
-box-shadow:0 5px 20px rgba(0,0,0,0.12);
+box-shadow:0 5px 18px rgba(0,0,0,0.12);
 }
 
 .before-after-image h3{
@@ -380,69 +468,89 @@ object-fit:cover;
 display:block;
 }
 
-/* ============================= */
-/* SERVICE AREAS */
-/* ============================= */
 
-.areas-section{
-background:#fff;
+/* =========================================
+   SERVICE AREAS
+========================================= */
+
+.service-areas{
+background:#f7f7f7;
 }
 
-.areas-box{
-background:#111;
-color:#fff;
-padding:45px;
-border-radius:12px;
+.area-intro{
+max-width:800px;
+margin:0 auto 35px;
 text-align:center;
+color:#555;
 }
 
-.areas-box h3{
-font-size:28px;
-color:#d4af37;
-margin-bottom:20px;
-}
-
-.areas-list{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:12px;
-margin-top:20px;
+.area-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
 }
 
 .area{
-background:#222;
-border:1px solid #444;
-padding:10px 18px;
-border-radius:25px;
-font-size:14px;
+background:#fff;
+padding:18px;
+text-align:center;
+border-radius:8px;
+font-weight:600;
+box-shadow:0 3px 10px rgba(0,0,0,0.07);
 }
 
-.areas-note{
-margin-top:25px;
-color:#ccc;
+
+/* =========================================
+   WHY CHOOSE US
+========================================= */
+
+.why-us{
+background:#111;
+color:#fff;
 }
 
-/* ============================= */
-/* CTA */
-/* ============================= */
+.why-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.why-card{
+text-align:center;
+padding:20px;
+}
+
+.why-card h3{
+color:#d4af37;
+margin-bottom:10px;
+font-size:21px;
+}
+
+.why-card p{
+color:#ddd;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
 
 .cta{
 background:#d4af37;
 color:#111;
 text-align:center;
-padding:65px 20px;
+padding:70px 20px;
 }
 
 .cta h2{
-font-size:34px;
+font-size:36px;
 margin-bottom:10px;
 }
 
 .phone{
 font-size:28px;
 font-weight:700;
-margin:10px 0 20px;
+margin:15px 0;
 }
 
 .phone a{
@@ -450,22 +558,13 @@ color:#111;
 text-decoration:none;
 }
 
-.cta .btn{
-background:#111;
-color:#fff;
-}
 
-.cta .btn:hover{
-background:#fff;
-color:#111;
-}
-
-/* ============================= */
-/* CONTACT FORM */
-/* ============================= */
+/* =========================================
+   CONTACT FORM
+========================================= */
 
 .contact-section{
-background:#f7f7f7;
+background:#fff;
 }
 
 form{
@@ -474,46 +573,43 @@ margin:auto;
 display:flex;
 flex-direction:column;
 gap:12px;
-background:#fff;
-padding:30px;
-border-radius:12px;
-box-shadow:0 5px 20px rgba(0,0,0,0.1);
 }
 
 input,
-textarea,
-select{
-padding:13px;
+textarea{
+padding:14px;
 border:1px solid #ccc;
 border-radius:5px;
 font-family:Poppins,sans-serif;
-font-size:14px;
-width:100%;
-}
-
-textarea{
-resize:vertical;
-}
-
-button.submit-btn{
-background:#d4af37;
-border:none;
-padding:14px;
-font-weight:700;
-cursor:pointer;
-border-radius:5px;
-transition:0.3s;
 font-size:15px;
 }
 
-button.submit-btn:hover{
+input:focus,
+textarea:focus{
+outline:none;
+border-color:#d4af37;
+}
+
+button{
+background:#d4af37;
+border:none;
+padding:14px;
+font-weight:600;
+cursor:pointer;
+border-radius:5px;
+font-size:16px;
+transition:0.3s;
+}
+
+button:hover{
 background:#111;
 color:#fff;
 }
 
-/* ============================= */
-/* FOOTER */
-/* ============================= */
+
+/* =========================================
+   FOOTER
+========================================= */
 
 footer{
 background:#111;
@@ -522,22 +618,24 @@ text-align:center;
 padding:30px 20px;
 }
 
-footer strong{
-color:#d4af37;
+.footer-links{
+margin-bottom:15px;
 }
 
-.footer-phone{
-margin-top:10px;
-}
-
-.footer-phone a{
-color:#d4af37;
+.footer-links a{
+color:#aaa;
+margin:0 10px;
 text-decoration:none;
 }
 
-/* ============================= */
-/* FLOATING CALL BUTTON */
-/* ============================= */
+.footer-links a:hover{
+color:#d4af37;
+}
+
+
+/* =========================================
+   FLOATING CALL BUTTON
+========================================= */
 
 .call-btn{
 position:fixed;
@@ -548,7 +646,7 @@ color:#fff;
 padding:14px 20px;
 border-radius:50px;
 text-decoration:none;
-font-weight:700;
+font-weight:600;
 box-shadow:0 5px 15px rgba(0,0,0,0.3);
 transition:0.3s;
 z-index:1000;
@@ -559,9 +657,19 @@ background:#20ba5e;
 transform:scale(1.05);
 }
 
-/* ============================= */
-/* MOBILE */
-/* ============================= */
+
+/* =========================================
+   SPANISH LANGUAGE
+========================================= */
+
+.spanish{
+display:none;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
 
 @media(max-width:900px){
 
@@ -569,20 +677,31 @@ transform:scale(1.05);
 grid-template-columns:repeat(2,1fr);
 }
 
-nav{
-flex-wrap:wrap;
+.area-grid{
+grid-template-columns:repeat(2,1fr);
 }
 
-.nav-right{
-gap:15px;
+.why-grid{
+grid-template-columns:1fr;
 }
 
 }
 
 @media(max-width:768px){
 
-section{
-padding:60px 0;
+header{
+padding:15px 0;
+}
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+.nav-links{
+flex-wrap:wrap;
+justify-content:center;
+gap:18px;
 }
 
 .hero{
@@ -594,7 +713,11 @@ font-size:36px;
 }
 
 .hero p{
-font-size:16px;
+font-size:17px;
+}
+
+section{
+padding:60px 0;
 }
 
 .title h2{
@@ -605,7 +728,7 @@ font-size:30px;
 grid-template-columns:1fr;
 }
 
-.style-grid{
+.options-grid{
 grid-template-columns:1fr;
 }
 
@@ -621,44 +744,63 @@ grid-template-columns:1fr;
 height:280px;
 }
 
-.pool-card img,
-.style-card img{
+.pool-card img{
 height:280px;
 }
 
-nav{
-flex-direction:column;
+.option-card img{
+height:280px;
 }
 
-.nav-right{
-flex-direction:column;
-gap:10px;
+.area-grid{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+@media(max-width:480px){
+
+.logo{
+font-size:18px;
+}
+
+.nav-links{
+gap:12px;
 }
 
 nav a{
-margin:0 5px;
+font-size:13px;
 }
 
-.areas-box{
-padding:30px 20px;
+.hero h1{
+font-size:30px;
 }
 
-.call-btn{
-bottom:15px;
-right:15px;
-padding:12px 16px;
+.hero-buttons{
+flex-direction:column;
+}
+
+.btn{
+text-align:center;
+}
+
+.area-grid{
+grid-template-columns:1fr;
 }
 
 }
 
 </style>
+
 </head>
+
 
 <body>
 
-<!-- ============================= -->
-<!-- HEADER -->
-<!-- ============================= -->
+
+<!-- =========================================
+     HEADER
+========================================= -->
 
 <header>
 
@@ -670,30 +812,20 @@ padding:12px 16px;
 CHIMAS <span>CONSTRUCTION</span>
 </div>
 
-<div class="nav-right">
 
-<div>
-<a href="#services" data-en="Services" data-es="Servicios">Services</a>
-<a href="#gallery" data-en="Our Work" data-es="Nuestros Trabajos">Our Work</a>
-<a href="#areas" data-en="Service Areas" data-es="Áreas de Servicio">Service Areas</a>
-<a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
-</div>
+<div class="nav-links">
 
-<div class="language-switcher">
+<a href="#services">Services</a>
 
-<span>🌎</span>
+<a href="#gallery">Our Work</a>
 
-<button onclick="setLanguage('en')">
-English
-</button>
+<a href="#areas">Service Areas</a>
 
-<span class="language-divider">|</span>
+<a href="#contact">Contact</a>
 
-<button onclick="setLanguage('es')">
+<button class="language-toggle" onclick="toggleLanguage()">
 Español
 </button>
-
-</div>
 
 </div>
 
@@ -704,9 +836,14 @@ Español
 </header>
 
 
-<!-- ============================= -->
+<!-- =========================================
+     ENGLISH WEBSITE
+========================================= -->
+
+<div id="english">
+
+
 <!-- HERO -->
-<!-- ============================= -->
 
 <section class="hero">
 
@@ -714,33 +851,25 @@ Español
 
 <div class="hero-content">
 
-<div class="spanish-banner">
-Se Habla Español
-</div>
-
-<h1
-data-en="Concrete Work Built to Last"
-data-es="Trabajos de Concreto Construidos para Durar">
-Concrete Work Built to Last
+<h1>
+Concrete Driveways, Patios, Walkways & Pavers in North Carolina
 </h1>
 
-<p
-data-en="Professional concrete and hardscaping services designed to improve the beauty, function, and value of your property."
-data-es="Servicios profesionales de concreto y construcción exterior diseñados para mejorar la belleza, funcionalidad y valor de su propiedad.">
-Professional concrete and hardscaping services designed to improve the beauty, function, and value of your property.
+<p>
+Chimas Construction provides professional concrete and hardscaping services for homeowners throughout Charlotte, Raleigh, Greensboro, Winston-Salem, Huntersville, Waxhaw, Durham, Wilmington and surrounding areas.
 </p>
 
-<p class="hero-service-area"
-data-en="Serving Charlotte, Raleigh, Greensboro, Winston-Salem, Durham, Wilmington, Huntersville, Waxhaw and surrounding areas."
-data-es="Sirviendo a Charlotte, Raleigh, Greensboro, Winston-Salem, Durham, Wilmington, Huntersville, Waxhaw y áreas cercanas.">
-Serving Charlotte, Raleigh, Greensboro, Winston-Salem, Durham, Wilmington, Huntersville, Waxhaw and surrounding areas.
-</p>
+<div class="hero-buttons">
 
-<a href="#contact" class="btn"
-data-en="Get Your Free Estimate"
-data-es="Solicite su Cotización Gratis">
-Get Your Free Estimate
+<a href="#contact" class="btn">
+Request a Free Estimate
 </a>
+
+<a href="tel:9802935467" class="btn btn-outline">
+Call (980) 293-5467
+</a>
+
+</div>
 
 </div>
 
@@ -749,26 +878,43 @@ Get Your Free Estimate
 </section>
 
 
-<!-- ============================= -->
-<!-- SERVICES -->
-<!-- ============================= -->
+<!-- INTRO -->
 
-<section id="services" class="services-section">
+<section class="intro">
+
+<div class="container">
+
+<div class="intro-content">
+
+<h2>
+Concrete & Hardscaping Built for Your Home
+</h2>
+
+<p>
+At Chimas Construction, we help homeowners improve their outdoor spaces with professionally installed concrete and paver solutions. From driveways and patios to walkways and concrete around in-ground pools, we focus on quality workmanship and durable results designed to complement your property.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="services-section" id="services">
 
 <div class="container">
 
 <div class="title">
 
-<h2
-data-en="Our Services"
-data-es="Nuestros Servicios">
+<h2>
 Our Services
 </h2>
 
-<p
-data-en="From concrete driveways to patios, walkways, pavers, and pool areas, we provide quality workmanship built for lasting results."
-data-es="Desde entradas de concreto hasta patios, caminos, adoquines y áreas de piscinas, ofrecemos trabajos de calidad diseñados para durar.">
-From concrete driveways to patios, walkways, pavers, and pool areas, we provide quality workmanship built for lasting results.
+<p>
+Explore our concrete and hardscaping services, including stamped and non-stamped options for many residential projects.
 </p>
 
 </div>
@@ -781,20 +927,20 @@ From concrete driveways to patios, walkways, pavers, and pool areas, we provide 
 
 <div class="service-card">
 
-<img src="images/Driveway-Stamped.jpg" alt="Concrete Driveway">
+<img
+src="images/Driveway.jpg"
+alt="Concrete driveway installation by Chimas Construction in North Carolina"
+loading="lazy"
+>
 
 <div class="service-content">
 
-<h3
-data-en="Concrete Driveways"
-data-es="Entradas de Concreto">
+<h3>
 Concrete Driveways
 </h3>
 
-<p
-data-en="We install durable stamped and non-stamped concrete driveways designed for strength, functionality, and curb appeal."
-data-es="Instalamos entradas de concreto estampado y no estampado, diseñadas para ofrecer resistencia, funcionalidad y una excelente apariencia.">
-We install durable stamped and non-stamped concrete driveways designed for strength, functionality, and curb appeal.
+<p>
+Choose from stamped or non-stamped concrete driveways designed to provide a durable and attractive entrance to your home.
 </p>
 
 </div>
@@ -806,20 +952,20 @@ We install durable stamped and non-stamped concrete driveways designed for stren
 
 <div class="service-card">
 
-<img src="images/Patio-Stamped.jpg" alt="Concrete Patio">
+<img
+src="images/Patio.jpg"
+alt="Concrete patio installation by Chimas Construction in North Carolina"
+loading="lazy"
+>
 
 <div class="service-content">
 
-<h3
-data-en="Concrete Patios"
-data-es="Patios de Concreto">
+<h3>
 Concrete Patios
 </h3>
 
-<p
-data-en="Create an outdoor space for relaxing and entertaining with stamped or non-stamped concrete patios."
-data-es="Cree un espacio exterior ideal para relajarse y compartir con patios de concreto estampado o no estampado.">
-Create an outdoor space for relaxing and entertaining with stamped or non-stamped concrete patios.
+<p>
+Create a comfortable outdoor space with a stamped or non-stamped concrete patio built for relaxing and entertaining.
 </p>
 
 </div>
@@ -831,45 +977,20 @@ Create an outdoor space for relaxing and entertaining with stamped or non-stampe
 
 <div class="service-card">
 
-<img src="images/Walkway-Stamped.jpg" alt="Concrete Walkway">
+<img
+src="images/Walkway.jpg"
+alt="Concrete walkway installation by Chimas Construction in North Carolina"
+loading="lazy"
+>
 
 <div class="service-content">
 
-<h3
-data-en="Concrete Walkways"
-data-es="Caminos de Concreto">
+<h3>
 Concrete Walkways
 </h3>
 
-<p
-data-en="Improve access and appearance with stamped or non-stamped concrete walkways built for everyday use."
-data-es="Mejore el acceso y la apariencia de su propiedad con caminos de concreto estampado o no estampado, construidos para el uso diario.">
-Improve access and appearance with stamped or non-stamped concrete walkways built for everyday use.
-</p>
-
-</div>
-
-</div>
-
-
-<!-- PAVERS -->
-
-<div class="service-card">
-
-<img src="images/Pavers.jpg" alt="Paver Installation">
-
-<div class="service-content">
-
-<h3
-data-en="Paver Installation"
-data-es="Instalación de Adoquines">
-Paver Installation
-</h3>
-
-<p
-data-en="Add beauty and character to your property with professionally installed pavers for patios, walkways, and outdoor areas."
-data-es="Agregue belleza y carácter a su propiedad con adoquines instalados profesionalmente para patios, caminos y áreas exteriores.">
-Add beauty and character to your property with professionally installed pavers for patios, walkways, and outdoor areas.
+<p>
+Improve access and curb appeal with stamped or non-stamped concrete walkways and paths.
 </p>
 
 </div>
@@ -881,20 +1002,20 @@ Add beauty and character to your property with professionally installed pavers f
 
 <div class="service-card">
 
-<img src="images/Retaining-Wall.jpeg" alt="Retaining Wall">
+<img
+src="images/Retaining-Wall.jpeg"
+alt="Retaining wall construction by Chimas Construction in North Carolina"
+loading="lazy"
+>
 
 <div class="service-content">
 
-<h3
-data-en="Retaining Walls"
-data-es="Muros de Contención">
+<h3>
 Retaining Walls
 </h3>
 
-<p
-data-en="Strong and reliable retaining wall solutions designed to improve the function and appearance of your property."
-data-es="Soluciones de muros de contención resistentes y confiables, diseñadas para mejorar la funcionalidad y apariencia de su propiedad.">
-Strong and reliable retaining wall solutions designed to improve the function and appearance of your property.
+<p>
+Strong and reliable retaining wall solutions designed to improve the structure and appearance of your property.
 </p>
 
 </div>
@@ -902,24 +1023,49 @@ Strong and reliable retaining wall solutions designed to improve the function an
 </div>
 
 
-<!-- POOL AREAS -->
+<!-- PAVERS -->
 
 <div class="service-card">
 
-<img src="images/Pool-Surround.jpg" alt="Concrete and Pavers Around Pool">
+<img
+src="images/Pavers.jpg"
+alt="Paver installation by Chimas Construction in North Carolina"
+loading="lazy"
+>
 
 <div class="service-content">
 
-<h3
-data-en="Pool Concrete & Pavers"
-data-es="Concreto y Adoquines para Piscinas">
-Pool Concrete & Pavers
+<h3>
+Pavers
 </h3>
 
-<p
-data-en="We install stamped concrete, non-stamped concrete, or pavers around in-ground pools and nearby outdoor areas."
-data-es="Instalamos concreto estampado, concreto no estampado o adoquines alrededor de piscinas enterradas y áreas exteriores cercanas.">
-We install stamped concrete, non-stamped concrete, or pavers around in-ground pools and nearby outdoor areas.
+<p>
+Enhance your outdoor space with professionally installed pavers for patios, walkways, pool areas and other residential applications.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- POOL CONCRETE -->
+
+<div class="service-card">
+
+<img
+src="images/Concrete-Around-In-Ground-Pool.jpg"
+alt="Concrete installed around an in-ground pool by Chimas Construction"
+loading="lazy"
+>
+
+<div class="service-content">
+
+<h3>
+Concrete Around In-Ground Pools
+</h3>
+
+<p>
+We install concrete around in-ground pools, including stamped or non-stamped options, as well as paver solutions for pool areas.
 </p>
 
 </div>
@@ -934,52 +1080,44 @@ We install stamped concrete, non-stamped concrete, or pavers around in-ground po
 </section>
 
 
-<!-- ============================= -->
-<!-- STAMPED & NON-STAMPED -->
-<!-- ============================= -->
+<!-- STAMPED VS NON-STAMPED -->
 
-<section class="style-section">
+<section class="concrete-options">
 
 <div class="container">
 
 <div class="title">
 
-<h2
-data-en="Stamped or Non-Stamped Concrete"
-data-es="Concreto Estampado o No Estampado">
+<h2>
 Stamped or Non-Stamped Concrete
 </h2>
 
-<p
-data-en="Choose the concrete finish that best fits your property, style, and budget."
-data-es="Elija el acabado de concreto que mejor se adapte a su propiedad, estilo y presupuesto.">
-Choose the concrete finish that best fits your property, style, and budget.
+<p>
+Choose the concrete style that best fits your home's appearance, functionality and budget.
 </p>
 
 </div>
 
 
-<div class="style-grid">
+<div class="options-grid">
 
 
-<!-- STAMPED -->
+<div class="option-card">
 
-<div class="style-card">
+<img
+src="images/Stamped-Concrete.jpg"
+alt="Stamped concrete project by Chimas Construction in North Carolina"
+loading="lazy"
+>
 
-<img src="images/Driveway-Stamped.jpg" alt="Stamped Concrete">
+<div class="option-content">
 
-<div class="style-content">
-
-<h3
-data-en="Stamped Concrete"
-data-es="Concreto Estampado">
+<h3>
 Stamped Concrete
 </h3>
 
-<p
-data-en="Add texture, patterns, and visual character to your driveway, patio, walkway, or pool area."
-data-es="Agregue textura, diseños y carácter visual a su entrada, patio, camino o área de piscina.">
-Add texture, patterns, and visual character to your driveway, patio, walkway, or pool area.
+<p>
+Stamped concrete can add decorative patterns and textures to driveways, patios, walkways and pool areas while providing the durability of concrete.
 </p>
 
 </div>
@@ -987,24 +1125,22 @@ Add texture, patterns, and visual character to your driveway, patio, walkway, or
 </div>
 
 
-<!-- NON-STAMPED -->
+<div class="option-card">
 
-<div class="style-card">
+<img
+src="images/Non-Stamped-Concrete.jpg"
+alt="Non-stamped concrete project by Chimas Construction in North Carolina"
+loading="lazy"
+>
 
-<img src="images/Driveway-Non-Stamped.jpg" alt="Non-Stamped Concrete">
+<div class="option-content">
 
-<div class="style-content">
-
-<h3
-data-en="Non-Stamped Concrete"
-data-es="Concreto No Estampado">
+<h3>
 Non-Stamped Concrete
 </h3>
 
-<p
-data-en="A clean, durable, and practical concrete finish that provides a strong foundation for your property."
-data-es="Un acabado de concreto limpio, resistente y práctico que proporciona una base sólida para su propiedad.">
-A clean, durable, and practical concrete finish that provides a strong foundation for your property.
+<p>
+Non-stamped concrete provides a clean, traditional appearance and is a practical option for driveways, patios, walkways and other residential concrete projects.
 </p>
 
 </div>
@@ -1019,9 +1155,7 @@ A clean, durable, and practical concrete finish that provides a strong foundatio
 </section>
 
 
-<!-- ============================= -->
 <!-- POOL SECTION -->
-<!-- ============================= -->
 
 <section class="pool-section">
 
@@ -1029,16 +1163,12 @@ A clean, durable, and practical concrete finish that provides a strong foundatio
 
 <div class="title">
 
-<h2
-data-en="Concrete & Pavers Around In-Ground Pools"
-data-es="Concreto y Adoquines Alrededor de Piscinas Enterradas">
+<h2>
 Concrete & Pavers Around In-Ground Pools
 </h2>
 
-<p
-data-en="When you add an in-ground pool, we can help complete the surrounding area with stamped concrete, non-stamped concrete, or professionally installed pavers."
-data-es="Cuando agrega una piscina enterrada, podemos ayudarle a completar el área alrededor con concreto estampado, concreto no estampado o adoquines instalados profesionalmente.">
-When you add an in-ground pool, we can help complete the surrounding area with stamped concrete, non-stamped concrete, or professionally installed pavers.
+<p>
+Create a finished outdoor space around your in-ground pool with concrete or paver installation.
 </p>
 
 </div>
@@ -1049,20 +1179,20 @@ When you add an in-ground pool, we can help complete the surrounding area with s
 
 <div class="pool-card">
 
-<img src="images/Pool-Surround-Concrete.jpg" alt="Concrete Around In-Ground Pool">
+<img
+src="images/Concrete-and-Pavers-Around-Pool.jpg"
+alt="Concrete and pavers installed around an in-ground pool by Chimas Construction"
+loading="lazy"
+>
 
-<div class="pool-content">
+<div class="pool-card-content">
 
-<h3
-data-en="Concrete Pool Areas"
-data-es="Áreas de Concreto para Piscinas">
-Concrete Pool Areas
+<h3>
+Pool Area Concrete & Pavers
 </h3>
 
-<p
-data-en="We install concrete around in-ground pools, including stamped and non-stamped finishes."
-data-es="Instalamos concreto alrededor de piscinas enterradas, incluyendo acabados estampados y no estampados.">
-We install concrete around in-ground pools, including stamped and non-stamped finishes.
+<p>
+Whether you are looking for stamped concrete, non-stamped concrete or pavers around your in-ground pool, we can help create a finished outdoor area that complements your property.
 </p>
 
 </div>
@@ -1072,20 +1202,20 @@ We install concrete around in-ground pools, including stamped and non-stamped fi
 
 <div class="pool-card">
 
-<img src="images/Pool-Surround-Pavers.jpg" alt="Pavers Around In-Ground Pool">
+<img
+src="images/Concrete-Around-In-Ground-Pool.jpg"
+alt="Concrete around an in-ground pool installed by Chimas Construction"
+loading="lazy"
+>
 
-<div class="pool-content">
+<div class="pool-card-content">
 
-<h3
-data-en="Pool Pavers"
-data-es="Adoquines para Piscinas">
-Pool Pavers
+<h3>
+Concrete Pool Areas
 </h3>
 
-<p
-data-en="Pavers provide another attractive and durable option for creating a finished area around your in-ground pool."
-data-es="Los adoquines ofrecen otra opción atractiva y resistente para crear un área terminada alrededor de su piscina enterrada.">
-Pavers provide another attractive and durable option for creating a finished area around your in-ground pool.
+<p>
+Concrete around an in-ground pool can be installed as part of a larger patio or outdoor area or as a separate project surrounding the pool.
 </p>
 
 </div>
@@ -1100,26 +1230,20 @@ Pavers provide another attractive and durable option for creating a finished are
 </section>
 
 
-<!-- ============================= -->
-<!-- BEFORE & AFTER GALLERY -->
-<!-- ============================= -->
+<!-- BEFORE & AFTER -->
 
-<section id="gallery" class="gallery-section">
+<section class="gallery-section" id="gallery">
 
 <div class="container">
 
 <div class="title">
 
-<h2
-data-en="Before & After Projects"
-data-es="Proyectos Antes y Después">
-Before & After Projects
+<h2>
+Our Work: Before & After Projects
 </h2>
 
-<p
-data-en="See the transformation created by Chimas Construction."
-data-es="Vea las transformaciones realizadas por Chimas Construction.">
-See the transformation created by Chimas Construction.
+<p>
+See examples of transformations completed by Chimas Construction.
 </p>
 
 </div>
@@ -1134,26 +1258,30 @@ See the transformation created by Chimas Construction.
 
 <div class="before-after-image">
 
-<h3
-data-en="Before"
-data-es="Antes">
+<h3>
 Before
 </h3>
 
-<img src="images/Gallery1.jpg" alt="Before project 1">
+<img
+src="images/Gallery1.jpg"
+alt="Before concrete construction project by Chimas Construction in North Carolina"
+loading="lazy"
+>
 
 </div>
 
 
 <div class="before-after-image">
 
-<h3
-data-en="After"
-data-es="Después">
+<h3>
 After
 </h3>
 
-<img src="images/Gallery2.jpg" alt="After project 1">
+<img
+src="images/Gallery2.jpg"
+alt="Completed concrete construction project by Chimas Construction in North Carolina"
+loading="lazy"
+>
 
 </div>
 
@@ -1166,26 +1294,30 @@ After
 
 <div class="before-after-image">
 
-<h3
-data-en="Before"
-data-es="Antes">
+<h3>
 Before
 </h3>
 
-<img src="images/Gallery13.jpg" alt="Before project 2">
+<img
+src="images/Gallery5.jpg"
+alt="Before residential concrete project by Chimas Construction"
+loading="lazy"
+>
 
 </div>
 
 
 <div class="before-after-image">
 
-<h3
-data-en="After"
-data-es="Después">
+<h3>
 After
 </h3>
 
-<img src="images/Gallery14.jpg" alt="After project 2">
+<img
+src="images/Gallery6.jpg"
+alt="Completed residential concrete project by Chimas Construction"
+loading="lazy"
+>
 
 </div>
 
@@ -1198,26 +1330,30 @@ After
 
 <div class="before-after-image">
 
-<h3
-data-en="Before"
-data-es="Antes">
+<h3>
 Before
 </h3>
 
-<img src="images/Gallery5.jpg" alt="Before project 3">
+<img
+src="images/Gallery7.jpg"
+alt="Before construction project by Chimas Construction"
+loading="lazy"
+>
 
 </div>
 
 
 <div class="before-after-image">
 
-<h3
-data-en="After"
-data-es="Después">
+<h3>
 After
 </h3>
 
-<img src="images/Gallery6.jpg" alt="After project 3">
+<img
+src="images/Gallery8.jpg"
+alt="After construction project by Chimas Construction"
+loading="lazy"
+>
 
 </div>
 
@@ -1230,26 +1366,30 @@ After
 
 <div class="before-after-image">
 
-<h3
-data-en="Before"
-data-es="Antes">
+<h3>
 Before
 </h3>
 
-<img src="images/Gallery7.jpg" alt="Before project 4">
+<img
+src="images/Gallery9.jpg"
+alt="Before concrete project by Chimas Construction"
+loading="lazy"
+>
 
 </div>
 
 
 <div class="before-after-image">
 
-<h3
-data-en="After"
-data-es="Después">
+<h3>
 After
 </h3>
 
-<img src="images/Gallery8.jpg" alt="After project 4">
+<img
+src="images/Gallery10.jpg"
+alt="After concrete project by Chimas Construction"
+loading="lazy"
+>
 
 </div>
 
@@ -1262,26 +1402,30 @@ After
 
 <div class="before-after-image">
 
-<h3
-data-en="Before"
-data-es="Antes">
+<h3>
 Before
 </h3>
 
-<img src="images/Gallery9.jpg" alt="Before project 5">
+<img
+src="images/Gallery11.jpg"
+alt="Before residential hardscaping project by Chimas Construction"
+loading="lazy"
+>
 
 </div>
 
 
 <div class="before-after-image">
 
-<h3
-data-en="After"
-data-es="Después">
+<h3>
 After
 </h3>
 
-<img src="images/Gallery10.jpg" alt="After project 5">
+<img
+src="images/Gallery12.jpg"
+alt="After residential hardscaping project by Chimas Construction"
+loading="lazy"
+>
 
 </div>
 
@@ -1294,26 +1438,30 @@ After
 
 <div class="before-after-image">
 
-<h3
-data-en="Before"
-data-es="Antes">
+<h3>
 Before
 </h3>
 
-<img src="images/Gallery11.jpg" alt="Before project 6">
+<img
+src="images/Gallery13.jpg"
+alt="Before concrete and hardscaping project by Chimas Construction"
+loading="lazy"
+>
 
 </div>
 
 
 <div class="before-after-image">
 
-<h3
-data-en="After"
-data-es="Después">
+<h3>
 After
 </h3>
 
-<img src="images/Gallery12.jpg" alt="After project 6">
+<img
+src="images/Gallery14.jpg"
+alt="Completed concrete and hardscaping project by Chimas Construction"
+loading="lazy"
+>
 
 </div>
 
@@ -1327,60 +1475,126 @@ After
 </section>
 
 
-<!-- ============================= -->
 <!-- SERVICE AREAS -->
-<!-- ============================= -->
 
-<section id="areas" class="areas-section">
+<section class="service-areas" id="areas">
 
 <div class="container">
 
 <div class="title">
 
-<h2
-data-en="Areas We Serve"
-data-es="Áreas en las que Servimos">
+<h2>
 Areas We Serve
 </h2>
 
-<p
-data-en="Serving homeowners and property owners throughout major metropolitan areas of North Carolina."
-data-es="Atendemos a propietarios de viviendas y propiedades en las principales áreas metropolitanas de Carolina del Norte.">
-Serving homeowners and property owners throughout major metropolitan areas of North Carolina.
+</div>
+
+
+<div class="area-intro">
+
+<p>
+Chimas Construction provides concrete and hardscaping services throughout major metro areas in North Carolina. We serve homeowners in Charlotte, Raleigh, Greensboro, Winston-Salem, Huntersville, Waxhaw, Durham, Wilmington and surrounding communities.
 </p>
 
 </div>
 
 
-<div class="areas-box">
+<div class="area-grid">
 
-<h3
-data-en="Serving North Carolina"
-data-es="Sirviendo a Carolina del Norte">
-Serving North Carolina
+<div class="area">
+Charlotte, NC
+</div>
+
+<div class="area">
+Huntersville, NC
+</div>
+
+<div class="area">
+Waxhaw, NC
+</div>
+
+<div class="area">
+Raleigh, NC
+</div>
+
+<div class="area">
+Durham, NC
+</div>
+
+<div class="area">
+Greensboro, NC
+</div>
+
+<div class="area">
+Winston-Salem, NC
+</div>
+
+<div class="area">
+Wilmington, NC
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- WHY CHOOSE US -->
+
+<section class="why-us">
+
+<div class="container">
+
+<div class="title">
+
+<h2>
+Why Choose Chimas Construction?
+</h2>
+
+</div>
+
+
+<div class="why-grid">
+
+
+<div class="why-card">
+
+<h3>
+Quality Workmanship
 </h3>
 
-
-<div class="areas-list">
-
-<span class="area">Charlotte</span>
-<span class="area">Raleigh</span>
-<span class="area">Greensboro</span>
-<span class="area">Winston-Salem</span>
-<span class="area">Durham</span>
-<span class="area">Wilmington</span>
-<span class="area">Huntersville</span>
-<span class="area">Waxhaw</span>
-
+<p>
+We focus on delivering durable concrete and hardscaping solutions designed to improve your property.
+</p>
 
 </div>
 
 
-<p class="areas-note"
-data-en="We also serve surrounding communities. Contact us to confirm service availability in your area."
-data-es="También atendemos comunidades cercanas. Comuníquese con nosotros para confirmar la disponibilidad de servicio en su área.">
-We also serve surrounding communities. Contact us to confirm service availability in your area.
+<div class="why-card">
+
+<h3>
+Residential Services
+</h3>
+
+<p>
+We work with homeowners to create practical and attractive outdoor improvements.
 </p>
+
+</div>
+
+
+<div class="why-card">
+
+<h3>
+Free Estimates
+</h3>
+
+<p>
+Contact Chimas Construction to discuss your project and request a free estimate.
+</p>
+
+</div>
 
 
 </div>
@@ -1390,26 +1604,19 @@ We also serve surrounding communities. Contact us to confirm service availabilit
 </section>
 
 
-<!-- ============================= -->
 <!-- CTA -->
-<!-- ============================= -->
 
 <section class="cta">
 
 <div class="container">
 
-<h2
-data-en="Ready to Start Your Project?"
-data-es="¿Listo para Comenzar su Proyecto?">
+<h2>
 Ready to Start Your Project?
 </h2>
 
-<p
-data-en="Contact Chimas Construction today for a free estimate."
-data-es="Comuníquese hoy con Chimas Construction para obtener una cotización gratis.">
-Contact Chimas Construction today for a free estimate.
+<p>
+Contact Chimas Construction today to discuss your concrete or hardscaping project.
 </p>
-
 
 <div class="phone">
 
@@ -1419,145 +1626,67 @@ Contact Chimas Construction today for a free estimate.
 
 </div>
 
-
-<a href="#contact" class="btn"
-data-en="Request a Free Estimate"
-data-es="Solicite una Cotización Gratis">
+<a href="#contact" class="btn">
 Request a Free Estimate
 </a>
-
 
 </div>
 
 </section>
 
 
-<!-- ============================= -->
 <!-- CONTACT FORM -->
-<!-- ============================= -->
 
-<section id="contact" class="contact-section">
+<section class="contact-section" id="contact">
 
 <div class="container">
 
 <div class="title">
 
-<h2
-data-en="Request a Quote"
-data-es="Solicite una Cotización">
-Request a Quote
+<h2>
+Request a Free Estimate
 </h2>
 
-<p
-data-en="Tell us about your project and we will get back to you."
-data-es="Cuéntenos sobre su proyecto y nos pondremos en contacto con usted.">
-Tell us about your project and we will get back to you.
+<p>
+Tell us about your project and we'll get back to you.
 </p>
 
 </div>
 
 
-<!-- KEEP THIS MAILTO FORM FOR NOW -->
+<!-- KEEP THIS FORM FOR NOW -->
 
 <form action="mailto:frecendiz@gmail.com" method="POST" enctype="text/plain">
-
 
 <input
 type="text"
 name="name"
 placeholder="Your Name"
-data-placeholder-en="Your Name"
-data-placeholder-es="Su Nombre"
-required>
-
+required
+>
 
 <input
 type="tel"
 name="phone"
 placeholder="Phone Number"
-data-placeholder-en="Phone Number"
-data-placeholder-es="Número de Teléfono"
-required>
-
+required
+>
 
 <input
 type="email"
 name="email"
 placeholder="Email Address"
-data-placeholder-en="Email Address"
-data-placeholder-es="Correo Electrónico">
-
-
-<select name="project">
-
-<option value=""
-data-en="Select Project Type"
-data-es="Seleccione el Tipo de Proyecto">
-Select Project Type
-</option>
-
-<option value="Concrete Driveway"
-data-en="Concrete Driveway"
-data-es="Entrada de Concreto">
-Concrete Driveway
-</option>
-
-<option value="Concrete Patio"
-data-en="Concrete Patio"
-data-es="Patio de Concreto">
-Concrete Patio
-</option>
-
-<option value="Concrete Walkway"
-data-en="Concrete Walkway"
-data-es="Camino de Concreto">
-Concrete Walkway
-</option>
-
-<option value="Pavers"
-data-en="Pavers"
-data-es="Adoquines">
-Pavers
-</option>
-
-<option value="Pool Concrete or Pavers"
-data-en="Pool Concrete or Pavers"
-data-es="Concreto o Adoquines para Piscina">
-Pool Concrete or Pavers
-</option>
-
-<option value="Retaining Wall"
-data-en="Retaining Wall"
-data-es="Muro de Contención">
-Retaining Wall
-</option>
-
-<option value="Other"
-data-en="Other"
-data-es="Otro">
-Other
-</option>
-
-</select>
-
+>
 
 <textarea
 name="message"
 rows="6"
-placeholder="Describe your project"
-data-placeholder-en="Describe your project"
-data-placeholder-es="Describa su proyecto">
-</textarea>
+placeholder="Tell us about your project"
+></textarea>
 
-
-<button
-type="submit"
-class="submit-btn"
-data-en="Send Request"
-data-es="Enviar Solicitud">
+<button type="submit">
 Send Request
 </button>
-
 
 </form>
 
@@ -1566,114 +1695,868 @@ Send Request
 </section>
 
 
-<!-- ============================= -->
 <!-- FOOTER -->
-<!-- ============================= -->
 
 <footer>
 
-<p>
-© 2026 <strong>Chimas Construction</strong>
-</p>
+<div class="footer-links">
 
-<p
-data-en="Concrete & Hardscaping Services Throughout North Carolina"
-data-es="Servicios de Concreto y Construcción Exterior en Carolina del Norte">
-Concrete & Hardscaping Services Throughout North Carolina
-</p>
-
-<p class="footer-phone">
-
-<a href="tel:9802935467">
-(980) 293-5467
+<a href="#services">
+Services
 </a>
 
+<a href="#gallery">
+Our Work
+</a>
+
+<a href="#areas">
+Service Areas
+</a>
+
+<a href="#contact">
+Contact
+</a>
+
+</div>
+
+<p>
+© 2026 Chimas Construction | Charlotte, NC
 </p>
 
 <p>
-Se Habla Español
+Concrete Driveways • Patios • Walkways • Stamped Concrete • Pavers • Pool Areas
 </p>
 
 </footer>
 
 
-<!-- ============================= -->
-<!-- FLOATING CALL BUTTON -->
-<!-- ============================= -->
+</div>
+
+
+<!-- =========================================
+     SPANISH WEBSITE
+========================================= -->
+
+<div id="spanish" class="spanish">
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-content">
+
+<h1>
+Entradas de Concreto, Patios, Caminos y Adoquines en Carolina del Norte
+</h1>
+
+<p>
+Chimas Construction ofrece servicios profesionales de concreto y construcción exterior para propietarios en Charlotte, Raleigh, Greensboro, Winston-Salem, Huntersville, Waxhaw, Durham, Wilmington y áreas cercanas.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#contacto" class="btn">
+Solicitar Presupuesto Gratis
+</a>
+
+<a href="tel:9802935467" class="btn btn-outline">
+Llamar al (980) 293-5467
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="intro">
+
+<div class="container">
+
+<div class="intro-content">
+
+<h2>
+Concreto y Construcción Exterior para su Hogar
+</h2>
+
+<p>
+En Chimas Construction ayudamos a los propietarios a mejorar sus espacios exteriores con soluciones profesionales de concreto y adoquines. Ofrecemos entradas de concreto, patios, caminos, adoquines y concreto alrededor de piscinas enterradas.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="services-section">
+
+<div class="container">
+
+<div class="title">
+
+<h2>
+Nuestros Servicios
+</h2>
+
+<p>
+Ofrecemos diferentes opciones de concreto y construcción exterior para proyectos residenciales.
+</p>
+
+</div>
+
+
+<div class="service-grid">
+
+
+<div class="service-card">
+
+<img
+src="images/Driveway.jpg"
+alt="Entrada de concreto instalada por Chimas Construction"
+loading="lazy"
+>
+
+<div class="service-content">
+
+<h3>
+Entradas de Concreto
+</h3>
+
+<p>
+Ofrecemos entradas de concreto estampado o no estampado para mejorar la entrada y apariencia de su hogar.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="service-card">
+
+<img
+src="images/Patio.jpg"
+alt="Patio de concreto instalado por Chimas Construction"
+loading="lazy"
+>
+
+<div class="service-content">
+
+<h3>
+Patios de Concreto
+</h3>
+
+<p>
+Cree un espacio exterior para relajarse y disfrutar con un patio de concreto estampado o no estampado.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="service-card">
+
+<img
+src="images/Walkway.jpg"
+alt="Camino de concreto instalado por Chimas Construction"
+loading="lazy"
+>
+
+<div class="service-content">
+
+<h3>
+Caminos de Concreto
+</h3>
+
+<p>
+Mejore el acceso y la apariencia de su propiedad con caminos de concreto estampado o no estampado.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="service-card">
+
+<img
+src="images/Retaining-Wall.jpeg"
+alt="Muro de contención construido por Chimas Construction"
+loading="lazy"
+>
+
+<div class="service-content">
+
+<h3>
+Muros de Contención
+</h3>
+
+<p>
+Soluciones resistentes y confiables para mejorar la estructura y apariencia de su propiedad.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="service-card">
+
+<img
+src="images/Pavers.jpg"
+alt="Instalación de adoquines realizada por Chimas Construction"
+loading="lazy"
+>
+
+<div class="service-content">
+
+<h3>
+Adoquines
+</h3>
+
+<p>
+Instalamos adoquines para patios, caminos, áreas alrededor de piscinas y otros proyectos residenciales.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="service-card">
+
+<img
+src="images/Concrete-Around-In-Ground-Pool.jpg"
+alt="Concreto instalado alrededor de una piscina enterrada"
+loading="lazy"
+>
+
+<div class="service-content">
+
+<h3>
+Concreto Alrededor de Piscinas Enterradas
+</h3>
+
+<p>
+Ofrecemos concreto estampado, no estampado y opciones de adoquines alrededor de piscinas enterradas.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="concrete-options">
+
+<div class="container">
+
+<div class="title">
+
+<h2>
+Concreto Estampado o No Estampado
+</h2>
+
+<p>
+Elija el estilo de concreto que mejor se adapte a su hogar y proyecto.
+</p>
+
+</div>
+
+
+<div class="options-grid">
+
+
+<div class="option-card">
+
+<img
+src="images/Stamped-Concrete.jpg"
+alt="Proyecto de concreto estampado realizado por Chimas Construction"
+loading="lazy"
+>
+
+<div class="option-content">
+
+<h3>
+Concreto Estampado
+</h3>
+
+<p>
+El concreto estampado ofrece diferentes patrones y texturas decorativas para entradas, patios, caminos y áreas de piscinas.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="option-card">
+
+<img
+src="images/Non-Stamped-Concrete.jpg"
+alt="Proyecto de concreto no estampado realizado por Chimas Construction"
+loading="lazy"
+>
+
+<div class="option-content">
+
+<h3>
+Concreto No Estampado
+</h3>
+
+<p>
+El concreto no estampado ofrece una apariencia limpia y tradicional y es una opción práctica para muchos proyectos residenciales.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="pool-section">
+
+<div class="container">
+
+<div class="title">
+
+<h2>
+Concreto y Adoquines Alrededor de Piscinas Enterradas
+</h2>
+
+<p>
+Mejore el área alrededor de su piscina con concreto o adoquines.
+</p>
+
+</div>
+
+
+<div class="pool-grid">
+
+
+<div class="pool-card">
+
+<img
+src="images/Concrete-and-Pavers-Around-Pool.jpg"
+alt="Concreto y adoquines alrededor de una piscina enterrada"
+loading="lazy"
+>
+
+<div class="pool-card-content">
+
+<h3>
+Concreto y Adoquines para Piscinas
+</h3>
+
+<p>
+Podemos ayudarle a crear un espacio exterior terminado alrededor de su piscina enterrada utilizando concreto estampado, no estampado o adoquines.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="pool-card">
+
+<img
+src="images/Concrete-Around-In-Ground-Pool.jpg"
+alt="Concreto alrededor de una piscina enterrada"
+loading="lazy"
+>
+
+<div class="pool-card-content">
+
+<h3>
+Áreas de Concreto para Piscinas
+</h3>
+
+<p>
+El concreto alrededor de una piscina enterrada puede formar parte de un patio más grande o instalarse como un proyecto independiente.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="gallery-section">
+
+<div class="container">
+
+<div class="title">
+
+<h2>
+Nuestro Trabajo: Proyectos Antes y Después
+</h2>
+
+<p>
+Vea ejemplos de transformaciones realizadas por Chimas Construction.
+</p>
+
+</div>
+
+
+<div class="before-after">
+
+
+<div class="project-pair">
+
+<div class="before-after-image">
+
+<h3>
+Antes
+</h3>
+
+<img
+src="images/Gallery1.jpg"
+alt="Antes de un proyecto de construcción de concreto"
+loading="lazy"
+>
+
+</div>
+
+
+<div class="before-after-image">
+
+<h3>
+Después
+</h3>
+
+<img
+src="images/Gallery2.jpg"
+alt="Proyecto de concreto terminado por Chimas Construction"
+loading="lazy"
+>
+
+</div>
+
+</div>
+
+
+<div class="project-pair">
+
+<div class="before-after-image">
+
+<h3>
+Antes
+</h3>
+
+<img
+src="images/Gallery5.jpg"
+alt="Antes de un proyecto residencial de concreto"
+loading="lazy"
+>
+
+</div>
+
+
+<div class="before-after-image">
+
+<h3>
+Después
+</h3>
+
+<img
+src="images/Gallery6.jpg"
+alt="Proyecto residencial de concreto terminado"
+loading="lazy"
+>
+
+</div>
+
+</div>
+
+
+<div class="project-pair">
+
+<div class="before-after-image">
+
+<h3>
+Antes
+</h3>
+
+<img
+src="images/Gallery7.jpg"
+alt="Antes de un proyecto de construcción"
+loading="lazy"
+>
+
+</div>
+
+
+<div class="before-after-image">
+
+<h3>
+Después
+</h3>
+
+<img
+src="images/Gallery8.jpg"
+alt="Después de un proyecto de construcción"
+loading="lazy"
+>
+
+</div>
+
+</div>
+
+
+<div class="project-pair">
+
+<div class="before-after-image">
+
+<h3>
+Antes
+</h3>
+
+<img
+src="images/Gallery9.jpg"
+alt="Antes de un proyecto de concreto"
+loading="lazy"
+>
+
+</div>
+
+
+<div class="before-after-image">
+
+<h3>
+Después
+</h3>
+
+<img
+src="images/Gallery10.jpg"
+alt="Después de un proyecto de concreto"
+loading="lazy"
+>
+
+</div>
+
+</div>
+
+
+<div class="project-pair">
+
+<div class="before-after-image">
+
+<h3>
+Antes
+</h3>
+
+<img
+src="images/Gallery11.jpg"
+alt="Antes de un proyecto residencial de construcción exterior"
+loading="lazy"
+>
+
+</div>
+
+
+<div class="before-after-image">
+
+<h3>
+Después
+</h3>
+
+<img
+src="images/Gallery12.jpg"
+alt="Después de un proyecto residencial de construcción exterior"
+loading="lazy"
+>
+
+</div>
+
+</div>
+
+
+<div class="project-pair">
+
+<div class="before-after-image">
+
+<h3>
+Antes
+</h3>
+
+<img
+src="images/Gallery13.jpg"
+alt="Antes de un proyecto de concreto y construcción exterior"
+loading="lazy"
+>
+
+</div>
+
+
+<div class="before-after-image">
+
+<h3>
+Después
+</h3>
+
+<img
+src="images/Gallery14.jpg"
+alt="Proyecto terminado de concreto y construcción exterior"
+loading="lazy"
+>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="service-areas">
+
+<div class="container">
+
+<div class="title">
+
+<h2>
+Áreas de Servicio
+</h2>
+
+</div>
+
+
+<div class="area-intro">
+
+<p>
+Chimas Construction ofrece servicios de concreto y construcción exterior en las principales áreas metropolitanas de Carolina del Norte.
+</p>
+
+</div>
+
+
+<div class="area-grid">
+
+<div class="area">
+Charlotte, NC
+</div>
+
+<div class="area">
+Huntersville, NC
+</div>
+
+<div class="area">
+Waxhaw, NC
+</div>
+
+<div class="area">
+Raleigh, NC
+</div>
+
+<div class="area">
+Durham, NC
+</div>
+
+<div class="area">
+Greensboro, NC
+</div>
+
+<div class="area">
+Winston-Salem, NC
+</div>
+
+<div class="area">
+Wilmington, NC
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+¿Listo para comenzar su proyecto?
+</h2>
+
+<p>
+Comuníquese con Chimas Construction para hablar sobre su proyecto.
+</p>
+
+<div class="phone">
+
+<a href="tel:9802935467">
+(980) 293-5467
+</a>
+
+</div>
+
+<a href="#contacto" class="btn">
+Solicitar un Presupuesto Gratis
+</a>
+
+</div>
+
+</section>
+
+
+<section class="contact-section" id="contacto">
+
+<div class="container">
+
+<div class="title">
+
+<h2>
+Solicitar un Presupuesto Gratis
+</h2>
+
+<p>
+Cuéntenos sobre su proyecto y nos comunicaremos con usted.
+</p>
+
+</div>
+
+
+<!-- KEEP THIS FORM FOR NOW -->
+
+<form action="mailto:frecendiz@gmail.com" method="POST" enctype="text/plain">
+
+<input
+type="text"
+name="name"
+placeholder="Su Nombre"
+required
+>
+
+<input
+type="tel"
+name="phone"
+placeholder="Número de Teléfono"
+required
+>
+
+<input
+type="email"
+name="email"
+placeholder="Correo Electrónico"
+>
+
+<textarea
+name="message"
+rows="6"
+placeholder="Cuéntenos sobre su proyecto"
+></textarea>
+
+<button type="submit">
+Enviar Solicitud
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<div class="footer-links">
+
+<a href="#services">
+Servicios
+</a>
+
+<a href="#areas">
+Áreas de Servicio
+</a>
+
+<a href="#contacto">
+Contacto
+</a>
+
+</div>
+
+<p>
+© 2026 Chimas Construction | Charlotte, NC
+</p>
+
+</footer>
+
+
+</div>
+
+
+<!-- =========================================
+     CALL BUTTON
+========================================= -->
 
 <a class="call-btn" href="tel:9802935467">
-📞 <span
-data-en="Call Now"
-data-es="Llamar Ahora">
-Call Now
-</span>
+📞 Call Now
 </a>
 
 
-<!-- ============================= -->
-<!-- LANGUAGE SWITCHING SCRIPT -->
-<!-- ============================= -->
+<!-- =========================================
+     LANGUAGE TOGGLE SCRIPT
+========================================= -->
 
 <script>
 
-function setLanguage(language){
+function toggleLanguage(){
 
-document.documentElement.lang = language;
+const english = document.getElementById("english");
 
-const elements = document.querySelectorAll('[data-en]');
+const spanish = document.getElementById("spanish");
 
-elements.forEach(function(element){
+if(english.style.display === "none"){
 
-if(language === 'es'){
+english.style.display = "block";
 
-element.textContent = element.getAttribute('data-es');
+spanish.style.display = "none";
 
-}else{
-
-element.textContent = element.getAttribute('data-en');
-
-}
-
-});
-
-
-const placeholders = document.querySelectorAll('[data-placeholder-en]');
-
-placeholders.forEach(function(element){
-
-if(language === 'es'){
-
-element.placeholder = element.getAttribute('data-placeholder-es');
+document.documentElement.lang = "en";
 
 }else{
 
-element.placeholder = element.getAttribute('data-placeholder-en');
+english.style.display = "none";
+
+spanish.style.display = "block";
+
+document.documentElement.lang = "es";
 
 }
 
-});
-
-
-localStorage.setItem('preferredLanguage', language);
-
 }
-
-
-document.addEventListener('DOMContentLoaded', function(){
-
-const savedLanguage = localStorage.getItem('preferredLanguage');
-
-if(savedLanguage){
-
-setLanguage(savedLanguage);
-
-}
-
-});
 
 </script>
 
 
 </body>
+
 </html>
-```
